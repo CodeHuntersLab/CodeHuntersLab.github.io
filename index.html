@@ -1,1 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeHunters Lab</title>
+    <!-- Fuentes -->
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --blue: #003050;
+            --turquoise: #00a5b6;
+            --white: #ffffff;
+            --text-color: #333333;
+        }
 
+        body {
+            margin: 0;
+            font-family: 'Lexend', sans-serif;
+            color: var(--text-color);
+        }
+
+        /* Navegación */
+        .nav-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background-color: var(--blue);
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--white);
+            font-weight: 600;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .logo img {
+            width: 180px;
+            height: auto;
+        }
+
+        /* Hero */
+        .hero {
+            text-align: center;
+            background-color: var(--white);
+            padding: 3rem 1rem;
+            color: var(--blue);
+        }
+
+        .hero img {
+            width: 700px;
+            height: auto;
+            margin: 0 auto 2rem;
+            border-radius: 12px;
+            display: block;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-family: 'Poppins', sans-serif;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Secciones */
+        section {
+            padding: 4rem 1rem;
+        }
+
+        .blue-section {
+            background-color: var(--blue);
+            color: var(--white);
+        }
+
+        .turquoise-section {
+            background-color: var(--turquoise);
+            color: var(--white);
+        }
+
+        .white-section {
+            background-color: var(--white);
+            color: var(--text-color);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        h2 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+        }
+
+        /* Servicios */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .service-box {
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: var(--white);
+            text-align: center;
+        }
+
+        .service-box i {
+            font-size: 3rem;
+            color: var(--blue);
+            margin-bottom: 1rem;
+        }
+
+        .service-box h3 {
+            color: #003050;
+            font-size: 1.6rem;
+            font-family: 'Poppins', sans-serif;
+            margin-bottom: 1rem;
+        }
+
+        .service-box p {
+            color: black;
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background-color: var(--blue);
+            color: var(--white);
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header id="inicio">
+        <nav class="nav-bar">
+            <div class="logo">
+                <img src="logotipo-2022-clear-transparent.png" alt="CodeHunters Lab Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#quienes-somos">Quiénes Somos</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <img src="seo_india.jpg" alt="CodeHunters Lab Hero Image">
+            <h1>Innovación en Cada Proyecto</h1>
+            <p>En CodeHunters Lab llevamos la tecnología a nuevas alturas. Ofrecemos soluciones que combinan creatividad, eficiencia y un enfoque personalizado.</p>
+        </div>
+    </header>
+
+    <section id="quienes-somos" class="blue-section">
+        <div class="container">
+            <h2>Quiénes Somos</h2>
+            <p>
+                Somos un equipo apasionado por la tecnología y la innovación. Desde nuestra sede en Lima, Perú, transformamos ideas en soluciones reales 
+                con metodologías modernas y efectivas.
+            </p>
+        </div>
+    </section>
+
+    <section id="servicios" class="turquoise-section">
+        <div class="container">
+            <h2>Nuestros Servicios</h2>
+            <p>Descubre cómo podemos ayudarte a impulsar tu proyecto con soluciones adaptadas a tus necesidades.</p>
+            <div class="services-grid">
+                <div class="service-box">
+                    <i class="fas fa-cogs"></i>
+                    <h3 class="service-title">Consultoría</h3>
+                    <p class="service-description">Auditorías técnicas y planificación estratégica personalizadas para tu negocio.</p>
+                </div>
+                <div class="service-box">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3 class="service-title">Capacitación</h3>
+                    <p class="service-description">Equipamos a tu equipo con herramientas y conocimientos avanzados del mercado.</p>
+                </div>
+                <div class="service-box">
+                    <i class="fas fa-project-diagram"></i>
+                    <h3 class="service-title">Soluciones Ágiles</h3>
+                    <p class="service-description">Implementamos herramientas eficientes adaptadas a tus objetivos y visión empresarial.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 CodeHunters Lab. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

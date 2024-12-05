@@ -1,0 +1,51 @@
+/* Hero */
+.hero img {
+    width: 800px;
+    height: 575px;
+    margin: 0 auto;
+    display: block;
+    border-radius: 12px;
+}
+.hero h1 {
+    font-size: 3.2rem;
+    font-family: 'Poppins', sans-serif;
+    margin: 1.5rem 0;
+}
+.hero p {
+    font-size: 1.4rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Logo */
+.logo img {
+    width: 200px;
+    height: auto;
+}
+
+/* Secciones */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.service-box i {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: var(--turquoise);
+}
+.service-box h3 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+.service-box p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
